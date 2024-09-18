@@ -21,8 +21,8 @@ sed -i 's/Bootstrap/argon/g' feeds/luci/collections/luci/Makefile feeds/luci/col
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
 
-sed -i sed -i "s/\.disabled='1'/\.disabled='0'/g" package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
-sed -i sed -i "s/\.ssid='OpenWrt'/\.ssid='2077'/g" package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
+sed -i "s/\.disabled='1'/\.disabled='0'/g" package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
+sed -i "s/\.ssid='OpenWrt'/\.ssid='2077'/g" package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
 
 # 默认密码
 sed -i "s/^root:::0:99999:7:::/root:\$1\$zQaIXyAb\$gyLqELl5w39SAgDAlg8A10:18376:0:99999:7:::/" package/base-files/files/etc/shadow
